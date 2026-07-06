@@ -1,0 +1,28 @@
+:root{
+
+    /* Colores Institucionales */
+
+    --color-primario:#214E86;
+    --color-secundario:#F4F7FB;
+
+    --color-blanco:#FFFFFF;
+
+    --color-texto:#1F2937;
+
+    --color-borde:#E5E7EB;
+
+    --color-verde:#16A34A;
+
+    --color-amarillo:#F59E0B;
+
+    --color-rojo:#DC2626;
+
+    /* Bordes */
+
+    --radio:12px;
+
+    /* Sombras */
+
+    --sombra:0 5px 15px rgba(0,0,0,.08);
+
+}
