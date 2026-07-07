@@ -51,7 +51,10 @@
 
 <li class="activo"><i data-lucide="house"></i> Inicio</li>
 
-<li><i data-lucide="graduation-cap"></i> Alumnos</li>
+<li onclick="cargarModulo('alumnos')">
+    <i data-lucide="graduation-cap"></i>
+    Alumnos
+</li>
 
 <li><i data-lucide="clipboard-list"></i> Inscripciones</li>
 
@@ -75,51 +78,8 @@
 
 </aside>
 
-<section>
+<section id="contenido">
 
-<h2>Inicio</h2>
-
-<p class="bienvenida">
-
-Bienvenida, Daiana Martínez.
-
-</p>
-
-<div class="tarjetas">
-
-<div class="card">
-
-<h3>Alumnos Activos</h3>
-
-<h1>1542</h1>
-
-</div>
-
-<div class="card">
-
-<h3>Morosidad</h3>
-
-<h1>34%</h1>
-
-</div>
-
-<div class="card">
-
-<h3>Alertas</h3>
-
-<h1>12</h1>
-
-</div>
-
-<div class="card">
-
-<h3>Recaudación</h3>
-
-<h1>$12 M</h1>
-
-</div>
-
-</div>
 
 </section>
 
@@ -137,7 +97,8 @@ Bienvenida, Daiana Martínez.
     lucide.createIcons();
 </script>
 
-</body>
+<script src="js/app.js"></script>
 
+</body>
 
 </html>
