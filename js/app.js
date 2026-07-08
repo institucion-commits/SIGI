@@ -14,6 +14,29 @@ async function cargarModulo(modulo) {
 
         contenido.innerHTML = html;
 
+        // Cargar el JavaScript del módulo si existe
+try {
+
+    const scriptAnterior = document.getElementById("script-modulo");
+
+    if (scriptAnterior) {
+        scriptAnterior.remove();
+    }
+
+    const script = document.createElement("script");
+
+    script.src = `js/modules/${modulo}.js`;
+
+    script.id = "script-modulo";
+
+    document.body.appendChild(script);
+
+} catch (e) {
+
+    console.log("El módulo no tiene JavaScript.");
+
+}
+
         lucide.createIcons();
 
     } catch (error) {

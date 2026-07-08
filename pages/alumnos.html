@@ -23,48 +23,49 @@
     <div class="dashboard-alumnos">
 
         <div class="card-resumen">
-            <span>Alumnos Activos</span>
-            <h3>1542</h3>
-        </div>
+    <span>Alumnos Activos</span>
+    <h3 id="totalActivos">0</h3>
+</div>
 
-        <div class="card-resumen">
-            <span>Suspendidos</span>
-            <h3>36</h3>
-        </div>
+<div class="card-resumen">
+    <span>Suspendidos</span>
+    <h3 id="totalSuspendidos">0</h3>
+</div>
 
-        <div class="card-resumen">
-            <span>Egresados</span>
-            <h3>584</h3>
-        </div>
+<div class="card-resumen">
+    <span>Egresados</span>
+    <h3 id="totalEgresados">0</h3>
+</div>
 
-        <div class="card-resumen">
-            <span>Expedientes completos</span>
-            <h3>91%</h3>
-        </div>
+<div class="card-resumen">
+    <span>Expedientes completos</span>
+    <h3 id="totalExpedientes">0%</h3>
+</div>
 
     </div>
 
     <div class="barra-superior">
 
-        <input
-            type="text"
-            placeholder="Buscar por Legajo, DNI, Apellido o Nombre">
+       <input
+    type="text"
+    id="buscarAlumno"
+    placeholder="Buscar por Legajo, DNI, Apellido o Nombre">
 
-        <select>
-            <option>Anexo</option>
-        </select>
+        <select id="filtroAnexo">
+    <option value="">Todos los Anexos</option>
+</select>
 
-        <select>
-            <option>Carrera</option>
-        </select>
+<select id="filtroCarrera">
+    <option value="">Todas las Carreras</option>
+</select>
 
-        <select>
-            <option>Año</option>
-        </select>
+<select id="filtroAnio">
+    <option value="">Todos los Años</option>
+</select>
 
-        <select>
-            <option>Estado</option>
-        </select>
+<select id="filtroEstado">
+    <option value="">Todos los Estados</option>
+</select>
 
     </div>
 
@@ -92,77 +93,7 @@
 
 </thead>
 
-<tbody>
-
-<tr>
-
-<td class="col-alumno">
-
-<div class="avatar-alumno">
-
-JP
-
-</div>
-
-<div>
-
-<strong>Juan Pérez</strong><br>
-
-<small>Legajo: 00000001</small><br>
-
-<small>DNI: 42.345.678</small>
-
-</div>
-
-</td>
-
-<td>Tec. Sup. en Administración</td>
-
-<td>
-
-<span class="badge-activo">
-
-Activo
-
-</span>
-
-</td>
-
-<td>
-
-<span title="Debe cuotas">💰</span>
-
-<span title="Documentación pendiente">📄</span>
-
-</td>
-
-<td>
-
-05/07/2026
-
-<br>
-
-<small>Pago de cuota</small>
-
-</td>
-
-<td>
-
-<button class="accion">
-<i data-lucide="eye"></i>
-</button>
-
-<button class="accion">
-<i data-lucide="pencil"></i>
-</button>
-
-<button class="accion">
-<i data-lucide="folder-open"></i>
-</button>
-
-</td>
-
-</tr>
+<tbody id="tabla-alumnos">
 
 </tbody>
 
