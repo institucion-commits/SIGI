@@ -1,1 +1,187 @@
-<h2>Archivos</h2>
+<div class="archivos-alumno">
+
+    <!-- ENCABEZADO -->
+
+    <div class="encabezado-archivos">
+
+        <div class="titulo-archivos">
+
+            <i data-lucide="folder-open"></i>
+
+            <div>
+
+                <h2>Archivos del Expediente</h2>
+
+                <p>
+                    Documentación digital asociada al expediente
+                    del alumno.
+                </p>
+
+            </div>
+
+        </div>
+
+        <button
+            class="btn-subir-archivo"
+            id="btnSubirArchivo">
+
+            <i data-lucide="upload"></i>
+
+            Subir archivo
+
+        </button>
+
+    </div>
+
+
+    <!-- LISTADO -->
+
+    <div class="tabla-archivos">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Documento</th>
+
+                    <th>Categoría</th>
+
+                    <th>Tipo</th>
+
+                    <th>Fecha de carga</th>
+
+                    <th>Cargado por</th>
+
+                    <th>Acciones</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="listaArchivos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!-- MODAL SUBIR ARCHIVO -->
+
+    <div
+        class="modal-archivo"
+        id="modalArchivo">
+
+        <div class="modal-contenido-archivo">
+
+            <div class="modal-header-archivo">
+
+                <div>
+
+                    <h3>Subir archivo</h3>
+
+                    <p>
+                        Incorporar documentación al expediente.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-cerrar-archivo"
+                    id="cerrarModalArchivo">
+
+                    <i data-lucide="x"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="formulario-archivo">
+
+                <div class="campo-archivo">
+
+                    <label for="categoriaArchivo">
+                        Categoría
+                    </label>
+
+                    <select id="categoriaArchivo">
+
+                        <option value="">
+                            Seleccionar categoría
+                        </option>
+
+                        <option value="DNI">
+                            DNI
+                        </option>
+
+                        <option value="Partida de nacimiento">
+                            Partida de nacimiento
+                        </option>
+
+                        <option value="Título secundario">
+                            Título secundario
+                        </option>
+
+                        <option value="Ficha de inscripción">
+                            Ficha de inscripción
+                        </option>
+
+                        <option value="Constancia">
+                            Constancia
+                        </option>
+
+                        <option value="Otro">
+                            Otro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo-archivo">
+
+                    <label for="archivoSeleccionado">
+                        Archivo
+                    </label>
+
+                    <input
+                        type="file"
+                        id="archivoSeleccionado">
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer-archivo">
+
+                <button
+                    class="btn-cancelar-archivo"
+                    id="cancelarArchivo">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    class="btn-guardar-archivo"
+                    id="guardarArchivo">
+
+                    <i data-lucide="upload"></i>
+
+                    Subir archivo
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,1 +1,178 @@
-<h2>Observaciones</h2>
+<div class="observaciones-alumno">
+
+    <!-- ENCABEZADO -->
+
+    <div class="encabezado-observaciones">
+
+        <div>
+
+            <div class="titulo-observaciones">
+
+                <i data-lucide="sticky-note"></i>
+
+                <div>
+                    <h2>Observaciones</h2>
+
+                    <p>
+                        Registro de observaciones y situaciones relevantes
+                        del expediente del alumno.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btn-nueva-observacion" id="btnNuevaObservacion">
+
+            <i data-lucide="plus"></i>
+
+            Nueva observación
+
+        </button>
+
+    </div>
+
+
+    <!-- LISTADO -->
+
+    <div class="lista-observaciones" id="listaObservaciones">
+
+    </div>
+
+
+    <!-- MODAL -->
+
+    <div class="modal-observacion" id="modalObservacion">
+
+        <div class="modal-contenido-observacion">
+
+            <div class="modal-header-observacion">
+
+                <div>
+
+                    <h3>Nueva observación</h3>
+
+                    <p>
+                        Registrar una observación en el expediente.
+                    </p>
+
+                </div>
+
+                <button
+                    class="btn-cerrar-modal"
+                    id="cerrarModalObservacion">
+
+                    <i data-lucide="x"></i>
+
+                </button>
+
+            </div>
+
+
+            <div class="formulario-observacion">
+
+                <div class="campo-observacion">
+
+                    <label for="tipoObservacion">
+                        Tipo de observación
+                    </label>
+
+                    <select id="tipoObservacion">
+
+                        <option value="">
+                            Seleccionar tipo
+                        </option>
+
+                        <option value="Administrativa">
+                            Administrativa
+                        </option>
+
+                        <option value="Académica">
+                            Académica
+                        </option>
+
+                        <option value="Disciplinaria">
+                            Disciplinaria
+                        </option>
+
+                        <option value="Otra">
+                            Otra
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo-observacion">
+
+                    <label for="fechaObservacion">
+                        Fecha
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fechaObservacion">
+
+                </div>
+
+
+                <div class="campo-observacion">
+
+                    <label for="textoObservacion">
+                        Observación
+                    </label>
+
+                    <textarea
+                        id="textoObservacion"
+                        rows="5"
+                        placeholder="Escriba aquí la observación...">
+                    </textarea>
+
+                </div>
+
+
+                <div class="campo-observacion">
+
+                    <label for="registradoPor">
+                        Registrado por
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registradoPor"
+                        placeholder="Área o responsable">
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer-observacion">
+
+                <button
+                    class="btn-cancelar-observacion"
+                    id="cancelarObservacion">
+
+                    Cancelar
+
+                </button>
+
+                <button
+                    class="btn-guardar-observacion"
+                    id="guardarObservacion">
+
+                    <i data-lucide="save"></i>
+
+                    Guardar observación
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

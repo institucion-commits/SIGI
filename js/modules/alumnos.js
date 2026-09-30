@@ -6,32 +6,241 @@
 const alumnos = [
 
     {
-        id: 1,
-        legajo: "00000001",
-        dni: "42345678",
-        apellido: "Pérez",
-        nombre: "Juan",
-        carrera: "Tec. Sup. en Administración",
-        anio: "3° Año",
-        anexo: "EEP N° 518",
-        estado: "Activo",
-        cuotas: false,
-        documentacion: true
-    },
+    id: 1,
+    legajo: "00000001",
+    dni: "42345678",
+    apellido: "Pérez",
+    nombre: "Juan",
+    provincia: "Chaco",
 
+edad: 25,
+telefono: "3624-123456",
+whatsapp: "3624-123456",
+email: "juan.perez@email.com",
+domicilio: "Av. Ejemplo 123",
+contactoEmergencia: "Ana Pérez",
+telefonoEmergencia: "3624-654321",
+
+    carrera: "Tec. Sup. en Administración",
+    anio: "3° Año",
+    anexo: "EEP N° 518",
+    ingreso: "15/03/2024",
+    comision: "A",
+    turno: "Noche",
+    directorEstudios: "Lic. Ana Fernández",
+estadoAcademico: "Regular",
+materias: "Matemática III, Administración General, Economía",  
+cuotasDetalle: [
     {
-        id: 2,
-        legajo: "00000002",
-        dni: "41888777",
-        apellido: "Gómez",
-        nombre: "María",
-        carrera: "Profesorado de Primaria",
-        anio: "2° Año",
-        anexo: "Central",
-        estado: "Activo",
-        cuotas: true,
-        documentacion: false
+        periodo: "Marzo 2026",
+        vencimiento: "20/03/2026",
+        importe: 20000,
+        estado: "Pagada",
+        fechaPago: "18/03/2026"
+    },
+    {
+        periodo: "Abril 2026",
+        vencimiento: "20/04/2026",
+        importe: 20000,
+        estado: "Pagada",
+        fechaPago: "19/04/2026"
+    },
+    {
+        periodo: "Mayo 2026",
+        vencimiento: "20/05/2026",
+        importe: 20000,
+        estado: "Pendiente",
+        fechaPago: "-"
+    },
+    {
+        periodo: "Junio 2026",
+        vencimiento: "20/06/2026",
+        importe: 20000,
+        estado: "Pendiente",
+        fechaPago: "-"
     }
+],
+observaciones: [
+    {
+        fecha: "15/04/2026",
+        tipo: "Administrativa",
+        texto: "Presentó documentación pendiente.",
+        registradoPor: "Administración"
+    },
+    {
+        fecha: "22/04/2026",
+        tipo: "Académica",
+        texto: "Se comunicó con Dirección de Estudios.",
+        registradoPor: "Bedelía"
+    }
+],
+
+historial: [
+    {
+        fecha: "15/03/2025",
+        tipo: "Inscripción",
+        area: "Administración",
+        texto: "Alta del alumno en SIGI."
+    },
+    {
+        fecha: "18/03/2025",
+        tipo: "Documentación presentada",
+        area: "Bedelía",
+        texto: "Se incorporó documentación al expediente."
+    },
+    {
+        fecha: "20/03/2026",
+        tipo: "Pago registrado",
+        area: "Administración",
+        texto: "Se registró el pago de la cuota correspondiente a marzo de 2026."
+    },
+    {
+        fecha: "22/04/2026",
+        tipo: "Actualización académica",
+        area: "Dirección de Estudios",
+        texto: "Se actualizó la información académica del alumno."
+    }
+],
+
+archivos: [
+    {
+        nombre: "DNI - Juan Perez.pdf",
+        tipo: "PDF",
+        categoria: "DNI",
+        fecha: "15/03/2025",
+        cargadoPor: "Administración"
+    },
+    {
+        nombre: "Partida de nacimiento.pdf",
+        tipo: "PDF",
+        categoria: "Partida de nacimiento",
+        fecha: "15/03/2025",
+        cargadoPor: "Bedelía"
+    },
+    {
+        nombre: "Ficha de inscripción.pdf",
+        tipo: "PDF",
+        categoria: "Ficha de inscripción",
+        fecha: "18/03/2025",
+        cargadoPor: "Administración"
+    }
+],
+
+estado: "Activo",
+    cuotas: false,
+    documentos: {
+    dni: true,
+    partidaNacimiento: true,
+    tituloSecundario: true,
+    fichaInscripcion: true
+},
+},
+
+   {
+    id: 2,
+    legajo: "00000002",
+    dni: "41888777",
+    apellido: "Gómez",
+    nombre: "María",
+    
+    provincia: "Chaco",
+edad: 23,
+telefono: "3624-987654",
+whatsapp: "3624-987654",
+email: "maria.gomez@email.com",
+domicilio: "Calle Ejemplo 456",
+contactoEmergencia: "Carlos Gómez",
+telefonoEmergencia: "3624-456789",
+
+    carrera: "Profesorado de Primaria",
+    anio: "2° Año",
+    anexo: "Central",
+    ingreso: "18/03/2025",
+    comision: "B",
+    turno: "Noche",
+    directorEstudios: "Prof. Laura Gómez",
+estadoAcademico: "Regular",
+materias: "Didáctica General, Psicología Educacional, Lengua",
+ cuotasDetalle: [
+    {
+        periodo: "Marzo 2026",
+        vencimiento: "20/03/2026",
+        importe: 20000,
+        estado: "Pagada",
+        fechaPago: "20/03/2026"
+    },
+    {
+        periodo: "Abril 2026",
+        vencimiento: "20/04/2026",
+        importe: 20000,
+        estado: "Pendiente",
+        fechaPago: "-"
+    },
+    {
+        periodo: "Mayo 2026",
+        vencimiento: "20/05/2026",
+        importe: 20000,
+        estado: "Pendiente",
+        fechaPago: "-"
+    }
+],  
+
+observaciones: [
+    {
+        fecha: "10/04/2026",
+        tipo: "Administrativa",
+        texto: "Se recibió documentación para completar el expediente.",
+        registradoPor: "Administración"
+    }
+],
+
+historial: [
+    {
+        fecha: "18/03/2025",
+        tipo: "Inscripción",
+        area: "Administración",
+        texto: "Alta del alumno en SIGI."
+    },
+    {
+        fecha: "18/03/2025",
+        tipo: "Documentación presentada",
+        area: "Bedelía",
+        texto: "Se incorporó documentación inicial al expediente."
+    },
+    {
+        fecha: "20/03/2026",
+        tipo: "Pago registrado",
+        area: "Administración",
+        texto: "Se registró el pago de la cuota correspondiente a marzo de 2026."
+    }
+],
+
+archivos: [
+    {
+        nombre: "DNI - Maria Gomez.pdf",
+        tipo: "PDF",
+        categoria: "DNI",
+        fecha: "18/03/2025",
+        cargadoPor: "Administración"
+    },
+    {
+        nombre: "Ficha de inscripción.pdf",
+        tipo: "PDF",
+        categoria: "Ficha de inscripción",
+        fecha: "18/03/2025",
+        cargadoPor: "Bedelía"
+    }
+],
+
+estado: "Activo",
+    cuotas: true,
+    documentos: {
+    dni: true,
+    partidaNacimiento: true,
+    tituloSecundario: false,
+    fichaInscripcion: true
+},
+}
 
 ];
 
