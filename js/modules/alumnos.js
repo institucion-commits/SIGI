@@ -337,25 +337,40 @@ function renderizarTabla(lista = alumnos) {
 }
 
 
-// ==============================
-// BUSCADOR
-// ==============================
+// ======================================
+// INICIALIZAR MÓDULO ALUMNOS
+// ======================================
 
-document
-    .getElementById("buscarAlumno")
-    .addEventListener("input", aplicarFiltros);
+function inicializarAlumnos() {
 
-document
-    .getElementById("filtroAnexo")
-    .addEventListener("change", aplicarFiltros);
+    const buscador = document.getElementById("buscarAlumno");
 
-document
-    .getElementById("filtroCarrera")
-    .addEventListener("change", aplicarFiltros);
+    if (buscador) {
+        buscador.oninput = aplicarFiltros;
+    }
 
-document
-    .getElementById("filtroEstado")
-    .addEventListener("change", aplicarFiltros);
+    const filtroAnexo = document.getElementById("filtroAnexo");
+
+    if (filtroAnexo) {
+        filtroAnexo.onchange = aplicarFiltros;
+    }
+
+    const filtroCarrera = document.getElementById("filtroCarrera");
+
+    if (filtroCarrera) {
+        filtroCarrera.onchange = aplicarFiltros;
+    }
+
+    const filtroEstado = document.getElementById("filtroEstado");
+
+    if (filtroEstado) {
+        filtroEstado.onchange = aplicarFiltros;
+    }
+
+    renderizarTabla();
+    actualizarIndicadores();
+    cargarFiltros();
+}
 
 // ======================================
 // ACTUALIZAR INDICADORES
@@ -477,6 +492,4 @@ function abrirExpediente(id) {
 
 }
 
-renderizarTabla();
-actualizarIndicadores();
-cargarFiltros();
+window.inicializarAlumnos = inicializarAlumnos;

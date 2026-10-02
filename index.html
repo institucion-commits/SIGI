@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/pages/alumnos.css">
 <link rel="stylesheet" href="css/pages/expediente-alumno.css">
+<link rel="stylesheet" href="css/pages/inscripciones.css">
 
 </head> 
 
@@ -51,14 +52,20 @@
 
 <ul>
 
-<li class="activo"><i data-lucide="house"></i> Inicio</li>
+<li class="activo" onclick="cargarModulo('inicio')">
+    <i data-lucide="house"></i>
+    Inicio
+</li>
 
 <li onclick="cargarModulo('alumnos')">
     <i data-lucide="graduation-cap"></i>
     Alumnos
 </li>
 
-<li><i data-lucide="clipboard-list"></i> Inscripciones</li>
+<li onclick="cargarModulo('inscripciones')">
+    <i data-lucide="clipboard-list"></i>
+    Inscripciones
+</li>
 
 <li><i data-lucide="credit-card"></i> Cuotas</li>
 

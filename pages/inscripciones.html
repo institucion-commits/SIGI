@@ -1,0 +1,103 @@
+<div class="gestion-inscripciones">
+
+    <!-- ENCABEZADO -->
+    <div class="encabezado-modulo">
+
+        <div>
+            <h2>Gestión de Inscripciones</h2>
+            <p>Administración y seguimiento de las inscripciones de alumnos</p>
+        </div>
+
+        <button class="btn-principal" id="btnNuevaInscripcion">
+            <i data-lucide="user-plus"></i>
+            Nueva Inscripción
+        </button>
+
+    </div>
+
+
+    <!-- INDICADORES -->
+    <div class="dashboard-inscripciones">
+
+        <div class="card-resumen-inscripcion">
+            <span>Total de inscripciones</span>
+            <h3 id="totalInscripciones">0</h3>
+        </div>
+
+        <div class="card-resumen-inscripcion">
+            <span>Inscripciones aprobadas</span>
+            <h3 id="inscripcionesAprobadas">0</h3>
+        </div>
+
+        <div class="card-resumen-inscripcion">
+            <span>Pendientes de revisión</span>
+            <h3 id="inscripcionesPendientes">0</h3>
+        </div>
+
+        <div class="card-resumen-inscripcion">
+            <span>Documentación pendiente</span>
+            <h3 id="documentacionPendiente">0</h3>
+        </div>
+
+    </div>
+
+
+    <!-- BUSCADOR Y FILTROS -->
+    <div class="barra-superior-inscripciones">
+
+        <input
+            type="text"
+            id="buscarInscripcion"
+            placeholder="Buscar por Legajo, DNI, Apellido o Nombre"
+        >
+
+        <select id="filtroAnexoInscripcion">
+            <option value="">Todos los Anexos</option>
+        </select>
+
+        <select id="filtroCarreraInscripcion">
+            <option value="">Todas las Carreras</option>
+        </select>
+
+        <select id="filtroAnioInscripcion">
+            <option value="">Todos los Años</option>
+        </select>
+
+        <select id="filtroEstadoInscripcion">
+            <option value="">Todos los Estados</option>
+        </select>
+
+    </div>
+
+
+    <!-- TABLA -->
+    <div class="tabla-inscripciones">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Alumno</th>
+                    <th>DNI</th>
+                    <th>Carrera</th>
+                    <th>Anexo</th>
+                    <th>Fecha de inscripción</th>
+                    <th>Estado</th>
+                    <th>Documentación</th>
+                    <th>Acciones</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tabla-inscripciones">
+
+                <!-- Los registros se cargarán mediante JavaScript -->
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
