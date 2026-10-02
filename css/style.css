@@ -311,3 +311,209 @@ nav li.activo svg{
     color:white;
 
 }
+
+/* ==========================================
+   DISEÑO RESPONSIVE - SIGI
+   ========================================== */
+
+/* Evita desplazamiento horizontal */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   TABLETS
+   ========================================== */
+
+@media (max-width: 1024px) {
+
+    aside {
+        width: 220px;
+        flex-shrink: 0;
+    }
+
+    section {
+        min-width: 0;
+        padding: 24px;
+    }
+
+    .logo-menu img {
+        width: 200px;
+    }
+
+    .titulo h1 {
+        font-size: 26px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* Estructura general */
+
+    main {
+        display: flex;
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Menú lateral */
+
+    aside {
+        width: 75px;
+        min-width: 75px;
+        flex-shrink: 0;
+    }
+
+    /* Logo */
+
+    .logo-menu {
+        padding: 15px 5px;
+    }
+
+    .logo-menu img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Ocultar textos del menú */
+    
+    nav li {
+        justify-content: center;
+        padding: 14px 5px;
+        margin: 5px 8px;
+        gap: 0;
+        font-size: 0;
+    }
+
+    nav li svg {
+        width: 23px;
+        height: 23px;
+        flex-shrink: 0;
+    }
+
+    /* Contenido */
+
+    section {
+        width: calc(100% - 75px);
+        min-width: 0;
+        padding: 18px;
+        overflow-x: hidden;
+    }
+
+    /* Encabezado */
+
+    header {
+        padding: 20px;
+    }
+
+    .titulo {
+        padding-left: 12px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .titulo p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .titulo h2 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    /* Usuario */
+
+    .usuario {
+        height: auto;
+        min-height: 50px;
+        padding: 10px 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    /* Títulos de páginas */
+
+    section h2 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    /* Tarjetas */
+
+    .tarjetas {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+        min-width: 0;
+        padding: 18px;
+    }
+
+    /* Evitar que elementos grandes rompan la pantalla */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        max-width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 16px;
+    }
+
+    .titulo h1 {
+        font-size: 21px;
+    }
+
+    .titulo p {
+        font-size: 14px;
+    }
+
+    .titulo h2 {
+        font-size: 17px;
+    }
+
+    .usuario {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+}
